@@ -21,7 +21,7 @@ Let's try running `peek` on the file `DigiDB_digimonlist.csv`, which contains a 
 3. To filter for digimon in the mega stage, run `cut Stage==Mega` (try running `head` again to see if this worked).
 4. To further filter the previous results for mega digimon with a level 50 HP greater than 1500, run `cut Lv_50_HP>1500`.
 5. To list the applied cuts (filters), run `list_cuts`.
-6. To remove the mega stage cut, run 'undo_cut 0' where `0` is the index of the mega stage cut.
+6. To remove the mega stage cut, run 'undo_cut 0' where `0` is the index of the mega stage cut. Multiple cuts can be removed by specifying multiple arguments.
 
 In this way, we can view various aspects of our data.
 
