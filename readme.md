@@ -22,9 +22,6 @@ Let's try running Peek on the file `DigiDB_digimonlist.csv` (found [here](https:
 4. To further cut for mega digimon with a level 50 HP greater than 1500, run `cut Lv_50_HP>1500`.
 5. To list the applied cuts, run `list_cuts`.
 6. To remove the mega stage cut, run `undo_cut 0` where `0` is the index of the mega stage cut. Multiple cuts can be removed by specifying multiple arguments.
-
-In this way, we can examine the data.
-
 7. Run `quit` to quit peek.
 
 
