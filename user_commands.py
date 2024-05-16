@@ -5,7 +5,7 @@ def quit(args, kwargs):
 
 def refresh(args, kwargs):
     kwargs["data_handler"].refresh()
-    print()
+    print("Data refreshed.\n")
 
 def head(args, kwargs):
     try: num = int(kwargs['n'])
@@ -21,5 +21,10 @@ def cut(args, kwargs):
 
 def list_cuts(args, kwargs):
     cut_history = kwargs['data_handler'].cut_history
-    for cut in cut_history: print(cut)
+    for index, cut in enumerate(cut_history): print(f'{index}. {cut}')
+    print()
+
+def undo_cuts(args, kwargs):
+    cut_indicies = [int(arg) for arg in args]
+    kwargs['data_handler'].undo_cuts(cut_indicies)
     print()

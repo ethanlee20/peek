@@ -1,4 +1,4 @@
-from lib import split_and_strip, odd
+from lib import split_and_strip, odd, input_type
 
 
 class Comparison:
@@ -19,6 +19,7 @@ class Comparison:
         for sym in known_comp_syms:
             try:
                 var, val = split_and_strip(comp_string, sym)
+                if input_type(val) == str: val = f"'{val}'"
                 return var, sym, val
             except ValueError: continue
 

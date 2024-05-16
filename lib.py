@@ -36,3 +36,28 @@ def split_and_strip(s, sep):
     s = [i.strip() for i in s]
     s = remove_all('', s)
     return s
+
+
+def last_index(l:list):
+    return len(l) - 1
+
+
+def spaces_to_underscores(string):
+    splits = string.split()
+    # [splits.insert(i, "_") for i in range(last_index(splits), 0, -1)]
+    new_string = "_".join(splits)
+    return new_string
+
+
+def input_type(string):
+    try:
+        int(string)
+        return int
+    except ValueError: pass
+    
+    try: 
+        float(string)
+        return float
+    except ValueError: pass
+    
+    return str
