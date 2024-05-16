@@ -14,7 +14,7 @@ functionality can be added by editing the `user_commands.py` file. More instruct
 
 ## Example Usage
 
-Let's try running `peek` on the file `DigiDB_digimonlist.csv`, which contains a dataframe of digimon and their attributes.
+Let's try running `peek` on the file `DigiDB_digimonlist.csv` (found [here](https://www.kaggle.com/datasets/rtatman/digidb)), which contains a dataframe of digimon and their attributes.
 
 1. To open the file in peek run `python path/to/peek.py path/to/DigiDB_digimonlist.csv`.
 2. To view the first few rows run `head`.
