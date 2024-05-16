@@ -1,4 +1,4 @@
-This is a small program to peek at pandas dataframes.
+This is a small interactive program to peek at pandas dataframes.
 
 Peek keeps a loaded dataframe in memory and comes with various functions such as viewing the first few rows and filtering.
 
