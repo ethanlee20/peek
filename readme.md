@@ -18,7 +18,7 @@ Let's try running Peek on the file `DigiDB_digimonlist.csv` (found [here](https:
 
 1. To open the file in Peek, run `python path/to/peek.py path/to/DigiDB_digimonlist.csv`.
 
-2. To view the first few digimon, run `head`. The output is as follows:
+2. To view the first few digimon, run `head`.
 ```
 :-) head
    Number  Digimon Stage  Type Attribute  Memory  Equip_Slots  Lv_50_HP  Lv50_SP  Lv50_Atk  Lv50_Def  Lv50_Int  Lv50_Spd
@@ -30,7 +30,6 @@ Let's try running Peek on the file `DigiDB_digimonlist.csv` (found [here](https:
 ```
 
 3. To cut (filter) for digimon in the mega stage, run `cut Stage==Mega` (try running `head` again to see if this worked). Note that spaces in the cut string (i.e. `Stage == Mega`) will break Peek.
-The output:
 ```
 :-) head
      Number            Digimon Stage     Type Attribute  Memory  Equip_Slots  Lv_50_HP  Lv50_SP  Lv50_Atk  Lv50_Def  Lv50_Int  Lv50_Spd
