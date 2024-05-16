@@ -24,7 +24,7 @@ def list_cuts(args, kwargs):
     for index, cut in enumerate(cut_history): print(f'{index}. {cut}')
     print()
 
-def undo_cuts(args, kwargs):
+def undo_cut(args, kwargs):
     cut_indicies = [int(arg) for arg in args]
     kwargs['data_handler'].undo_cuts(cut_indicies)
     print()
